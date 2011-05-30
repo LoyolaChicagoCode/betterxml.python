@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE Rule SYSTEM "matching.dtd">
+<Rule>
+  <Subject match="Hello World"/>
+</Rule>

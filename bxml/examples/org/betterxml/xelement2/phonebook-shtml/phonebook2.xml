@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<f:Friends xmlns:f="http://mydomain.com/friends" xmlns:h="http://w3c.org/HTML">
+  <f:Friend nick_name="george" number="773-555-1234">
+    <h:html>
+    George K. Thiruvathukal
+    George is the <h:i>HTML Dude</h:i>. He prefers to write static HTML
+    using <h:a href="http://www.cs.luc.edu">explicit web links</h:a>.
+    </h:html>
+  </f:Friend>
+  <f:Friend nick_name="nina" number="773-888-8899">
+    Nina Wilfred
+  </f:Friend>
+  <f:Friend nick_name="w" number="701-555-1111">
+    George W. Bush
+  </f:Friend>
+  <f:Friend nick_name="tc" number="888-889-9999">
+    Thomas W. Christopher
+  </f:Friend>
+  <f:Friend f:nick_name="chandra" number="888-889-9999">
+     Chandra N. Sekharan
+  </f:Friend>
+</f:Friends>
+

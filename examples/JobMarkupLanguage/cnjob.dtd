@@ -1,0 +1,15 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT ticket (job|seq|par)>
+<!ELEMENT seq (job|seq|par)+>
+<!ELEMENT par (job|seq|par)+>
+<!ELEMENT job (property)*>
+<!ELEMENT property EMPTY>
+<!ATTLIST job name CDATA #REQUIRED>
+<!ATTLIST job type CDATA #REQUIRED>
+<!ATTLIST job nodes CDATA #IMPLIED>
+<!ATTLIST job code CDATA  #REQUIRED>
+<!ATTLIST job mainclass CDATA #REQUIRED>
+<!ATTLIST job mainmethod CDATA #REQUIRED>
+<!ATTLIST property name CDATA #REQUIRED>
+<!ATTLIST property value CDATA #REQUIRED>

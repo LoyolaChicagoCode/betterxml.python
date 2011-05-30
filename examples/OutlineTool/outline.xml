@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+
+<Content>
+<Topic id="TrainingTheInternet" owner="gkt">
+  <Abstract>
+    Learn the basics of the Internet.
+  </Abstract>
+  <Keywords> </Keywords>
+  <Requires> missing1</Requires>
+  <Uses> </Uses>
+
+  <Outline>
+  <Item> How the Internet works </Item>
+  <Item> How the internet works </Item>
+  <Item> Servers </Item>
+  <Item> IP Addresses </Item>
+  <Item> Routers </Item>
+  <Item> Domain Registration </Item>
+  <Item> Nameservers </Item>
+  <Item> Whois Records </Item>
+  </Outline>
+</Topic>
+
+<Topic id="TrainingBasicUnix" owner="gkt">
+  <Abstract>
+    This topic will cover the basics of working with Unix, focusing on its
+    basic organization and usage.
+  </Abstract>
+  <Keywords> file directory telnet prompt ls cd permissions 
+    user group vi emacs
+  </Keywords>
+  <Requires> missing1 missing2 Routers </Requires>
+  <Uses> </Uses>
+
+  <Outline>
+  <Item> Directory Structure of our Accounts (home, www, etc.) </Item>
+  <Item> Working from the Command prompt </Item>
+  <Item> Users, Groups and permissions </Item>
+  <Item> Text Editors </Item>
+  </Outline>
+</Topic>
+
+<Topic id="TrainingFTP">
+  <Abstract>
+    FTP and FTP Clients (AC)
+  </Abstract>
+  <Keywords> ftp telnet missing2 </Keywords>
+  <Requires> windows prompt directory file ls cd</Requires>
+  <Uses> </Uses>
+
+  <Outline>
+  <Item> Basic principle, and general explanation </Item>
+  <Item> Default Settings for any FTP Client </Item>
+  <Item> Using WS_FTP LE </Item>
+  <Item> FTP and Frontpage </Item>
+  <Item> Common Errors </Item>
+  </Outline>
+</Topic>
+
+<Topic id="TrainingEmail">
+  <Abstract>
+     TrainingEmail? and Email Clients (AC)
+  </Abstract>
+  <Keywords> pop imap addressing </Keywords>
+  <Requires> </Requires>
+  <Uses> </Uses>
+
+  <Outline>
+  <Item> Description of default settings to connect to our servers </Item>
+  <Item> Use of Outlook, Outlook Express, Netscape Messenger, Eudora </Item>
+  <Item> Site Mail - web based proprietary option </Item>
+  <Item> SMTP servers and possible relay errors </Item>
+  <Item> Email Aliases and redirect file </Item>
+  <Item> Unix Limitation of usernames and workaround </Item>
+  <Item> Autoresponders, Infobots </Item>
+  <Item> Common Errors </Item>
+  </Outline>
+</Topic>
+
+<Topic id="TrainingSiteSupport">
+  <Abstract>
+     TrainingSiteSupport? and Order Processing (AC) 
+  </Abstract>
+  <Keywords> </Keywords>
+  <Requires> </Requires>
+  <Uses> </Uses>
+
+  <Outline>
+  <Item> Checking Incoming and specific boxes </Item>
+  <Item> How to leave notes and reply </Item>
+  <Item> Using the FAQ list </Item>
+  <Item> Moving messages from box to box </Item>
+  <Item> Orders Tab in Aegis </Item>
+  <Item> Changing Status and loading specific orders </Item>
+  <Item> Editing orders </Item>
+  </Outline>
+</Topic>
+
+<Topic id="TrainingSiteControl">
+  <Abstract> </Abstract>
+  <Keywords> </Keywords>
+  <Requires> missing1 </Requires>
+  <Uses> </Uses>
+  <Outline>
+  <Item> Login procedures </Item>
+  <Item> accinfo </Item>
+  <Item> Domain Manager </Item>
+  <Item> Email Manager </Item>
+  <Item> Ecommerce Manager </Item>
+  <Item> Billing Manager </Item>
+  <Item> Account Manager </Item>
+  <Item> Trouble Tickets </Item>
+  <Item> scnotify </Item>
+  </Outline>
+</Topic>
+
+<Topic>
+  <Abstract>
+     17. TroubleShootingProcedures? 
+
+          Understanding Unix processes 
+          Unix S and K scripts and their use (start, stop, restart) 
+          Checking log files 
+  </Abstract>
+  <Keywords> </Keywords>
+  <Requires> </Requires>
+  <Uses> </Uses>
+</Topic>
+</Content>

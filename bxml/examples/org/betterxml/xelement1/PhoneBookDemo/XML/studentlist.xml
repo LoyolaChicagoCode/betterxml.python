@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Students>
+  <Student code_name="george" student_id="773-555-1234"
+    name="George K. Thiruvathukal">
+  </Student>
+  <Student nick_name="nina" number="773-888-8899">
+    Nina Wilfred
+  </Student>
+  <Student nick_name="w" number="701-555-1111">
+    George W. Bush
+  </Student>
+  <Student nick_name="tc" number="888-889-9999">
+    Thomas W. Christopher
+  </Student>
+</Students>

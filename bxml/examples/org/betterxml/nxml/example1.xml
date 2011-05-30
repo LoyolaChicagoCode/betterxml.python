@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<FirstTestElement>
+  <SecondTestElement myattr="attr1">
+    This is cdata.
+  </SecondTestElement>
+  <SecondTestElement myattr="attr2">
+    This is more cdata.
+  </SecondTestElement>
+</FirstTestElement>
+

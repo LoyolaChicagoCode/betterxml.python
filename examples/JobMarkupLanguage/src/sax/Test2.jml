@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<jml:ticket xmlns:jml="http://www.corexml.info/schemas/JML">
+<jml:seq>
+  <jml:job name="J1" type="serial" code="j1.jar" mainclass="job1" mainmethod="mymainmethod">
+  <jml:property name="j1a" value="value of j1a"/>
+  <jml:property name="j1b" value="value of j1b"/>
+  </jml:job>
+  <jml:par>
+     <jml:job name="J2" type="parallel" nodes="4" code="j2.jar"  mainclass="job1" mainmethod="mymainmethod">
+     <jml:property name="j2a" value="value of j2a"/>
+     <jml:property name="j2b" value="value of j2b"/>
+     </jml:job>
+     <jml:job name="J3" type="coordinated" nodes="8" code="j3.jar" mainclass="job1" mainmethod="mymainmethod">
+     <jml:property name="j3a" value="value of j3a"/>
+     <jml:property name="j3b" value="value of j3b"/>
+     <jml:property name="j3c" value="value of j3c"/>
+     </jml:job>
+  </jml:par>
+  <jml:job name="J4" type="coordinated" nodes="2" code="j4.jar"  mainclass="job1" mainmethod="mymainmethod"/>
+  <jml:par>
+     <jml:job name="J5" type="serial" code="j5.jar" mainclass="job5" mainmethod="job5main"/>
+     <jml:job name="J6" type="coordinated" nodes="5" code="j6.jar"  mainclass="job1" mainmethod="mymainmethod">
+     <jml:property name="j6" value="value of j6"/>
+     </jml:job>
+  </jml:par>
+  <jml:job name="J7" type="parallel" nodes="2" code="j7.jar"  mainclass="job1" mainmethod="mymainmethod"/>
+</jml:seq>
+</jml:ticket>

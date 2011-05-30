@@ -1,0 +1,7 @@
+You can use this program to perform DTD validation of *any* XML files of your
+choosing. Just make sure that you know how to use the program!
+
+Make sure you have the XML and DTD files in your directory...
+
+See the phonebook*.xml and pb.dtd for how you might go about doing this!
+

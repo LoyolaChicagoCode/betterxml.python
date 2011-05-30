@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<Phonebook>
+  <Contact id="gkt" name="George K. Thiruvathukal" dob="1967-04-29">
+     <Address type="office"> 
+       820 N. Michigan Avenue
+       Chicago, IL 60611
+     </Address>
+
+     <Phone type="office">312-915-7986</Phone>
+     <Phone type="cell">312-555-1212</Phone> 
+  </Contact>
+
+  <Contact id="mt" name="Michael Tobis" dob="1900-01-01">
+     <Address type="office"> 
+       820 N. Michigan Avenue
+       Chicago, IL 60611
+     </Address>
+
+     <Phone type="office">312-915-7992</Phone>
+     <Phone type="cell">773-555-1212</Phone> 
+  </Contact>
+</Phonebook>
+    

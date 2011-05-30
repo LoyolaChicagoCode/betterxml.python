@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TaskSeries>
+   <Task name="t1">
+      My Task 1
+   </Task>
+   <Task name="t2">
+      My Task 2
+   </Task>
+   <Task name="t3">
+      My Task 3
+   </Task>
+</TaskSeries>

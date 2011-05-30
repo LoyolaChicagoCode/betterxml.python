@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE Zones [
+<!ELEMENT Zones (ZoneConfiguration+)>
+
+<!ELEMENT ZoneConfiguration (TTL?, Host+)>
+
+<!ATTLIST ZoneConfiguration
+	domain CDATA #REQUIRED,
+	contact CDATA #REQUIRED,
+	based_on CDATA #IMPLIED,
+	active CDATA #IMPLIED>
+
+<!ELEMENT TTL EMPTY>
+
+<!ATTLIST TTL
+	refresh CDATA #REQUIRED,
+	retry CDATA #REQUIRED,
+	expire CDATA #REQUIRED,
+	minimum CDATA #REQUIRED>
+
+<!ELEMENT Host (Description, Alias*)>
+
+<!ATTLIST Host
+	name CDATA #REQUIRED,
+	ip CDATA #REQUIRED,
+	mail_exchange CDATA #IMPLIED,
+	ns (yes, no) #IMPLIED>
+
+<!ELEMENT Description (#PCDATA)>
+
+<!ELEMENT Alias EMPTY>
+
+<!ATTLIST Alias name CDATA #REQUIRED>
+]>
+<Zones>
+  <ZoneConfiguration domain="toolsofcomputing.com" contact="gkt" active="yes">
+     <TTL refresh="8H" retry="1H" expire="1W" minimum="1D"/>
+     <Host name="liszt" ip="192.168.1.33" mail_exchange="yes" ns="yes">
+        <Description>Mandrake Linux Server</Description>
+        <Alias>www</Alias>
+     </Host>
+     <Host name="chopin" ip="192.168.1.34" mail_exchange="no" ns="yes">
+        <Description>RedHat Linux Server</Description>
+     </Host>
+     <Host name="bach" ip="192.168.1.34" mail_exchange="no" ns="no">
+        <Description>Windows Server</Description>
+     </Host>
+     <Host name="ravel" ip="192.168.1.35">
+        <Description>Apple Mac OS Server</Description>
+     </Host>
+  </ZoneConfiguration> 
+
+  <ZoneConfiguration domain="quillscape.com" contact="nina" active="yes" based_on="toolsofcomputing.com">
+     <Host name="ravel" ip="192.168.1.35">
+        <Description>Apple Mac OS Server</Description>
+     </Host>
+  </ZoneConfiguration>
+
+  <ZoneConfiguration domain="inactive.com" contact="nobody" active="no" based_on="toolsofcomputing.com">
+  </ZoneConfiguration>
+</Zones>
+

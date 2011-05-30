@@ -1,0 +1,37 @@
+43c43
+<          self.parser = saxexts.make_parser()
+---
+>          self.parser = saxexts.XMLValParserFactory.make_parser()
+45a46,47
+>       self.parser_error_handler = ErrorPrinter()
+>       self.parser.setErrorHandler(self.parser_error_handler)
+58a61
+>          self.parser_error_handler.reset()
+59a63,64
+>          if self.parser_error_handler.has_errors():
+>             raise "validation failed"
+65a71,94
+> 
+> class ErrorPrinter:
+>     "A simple class that just prints error messages to standard out."
+> 
+>     def __init__(self):
+>        self.error_count = 0
+> 
+>     def reset(self):
+>        self.error_count = 0
+> 
+>     def has_errors(self):
+>        return self.error_count
+> 
+>     def warning(self, exception):
+>        print "Warning: %s %s" % (str(exception), exception.getMessage())
+>        sys.exit(1)
+> 
+>     def error(self, exception):
+>        self.error_count = self.error_count + 1
+>        print "Error: %s %s" % (str(exception), exception.getMessage())
+> 
+>     def fatalError(self, exception):
+>        self.error_count = self.error_count + 1
+>        print "Fatal Error: %s %s" % (str(exception), exception.getMessage())

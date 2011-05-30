@@ -1,0 +1,48 @@
+test1.jml:
+Parse Successful!
+
+sequential:
+
+  
+  sequential:
+
+    
+    user job sequential j1.jar entry point job1.mymainmethod
+    j1b=value of j1b
+    j1a=value of j1a
+
+    
+    parallel:
+
+      
+      user job sequential j2.jar entry point job1.mymainmethod
+      j2b=value of j2b
+      j2a=value of j2a
+
+      
+      user job sequential j3.jar entry point job1.mymainmethod
+      j3c=value of j3c
+      j3b=value of j3b
+      j3a=value of j3a
+
+
+    
+    user job sequential j4.jar entry point job1.mymainmethod
+
+    
+    parallel:
+
+      
+      user job sequential j5.jar entry point job5.job5main
+
+      
+      user job sequential j6.jar entry point job1.mymainmethod
+      j6=value of j6
+
+
+    
+    user job sequential j7.jar entry point job1.mymainmethod
+
+
+
+

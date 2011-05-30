@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!ELEMENT Rule (To|From|Subject|And|Or)>
+
+<!ELEMENT To EMPTY>
+<!ATTLIST To match CDATA #REQUIRED>
+
+<!ELEMENT From EMPTY>
+<!ATTLIST From match CDATA #REQUIRED>
+
+<!ELEMENT Subject EMPTY>
+<!ATTLIST Subject match CDATA #REQUIRED>
+
+<!ELEMENT And ( (To|From|Subject|And|Or)+ )>
+<!ELEMENT Or ( (To|From|Subject|And|Or)+ )>

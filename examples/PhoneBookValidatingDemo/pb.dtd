@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!ELEMENT Friends (Friend+)>
+<!ELEMENT Friend (#PCDATA)>
+<!ATTLIST Friend nick_name CDATA #REQUIRED>
+<!ATTLIST Friend number CDATA #REQUIRED>

@@ -1,0 +1,91 @@
+Attempting to create parser 2.
+success.
+
+*** processingInstruction ***
+locator.pub.id=null      locator.column=1         locator.line=1           
+locator.sys.id=file:///c:/gkt/Code/java/JobMarkupLan...                    
+startDocument
+
+*** startPrefixMapping ***
+uri=http://www.corexml.info/schemas/Tasks         prefix=tsk               
+locator.column=62        locator.line=2           
+
+*** startElement ***
+name=Tasks               uri=http://www.corexml.info/schemas/Tasks         
+qName=tsk:Tasks          locator.column=62        locator.line=2           
+
+*** characters ***
+ch=                                               length=3                 
+ch.length=2048           text=\n\s\s              locator.column=3         
+start=62                 locator.line=3           
+
+*** startElement ***
+name=Series              uri=http://www.corexml.info/schemas/Tasks         
+qName=tsk:Series         locator.column=25        locator.line=3           
+
+*** startElement: Attributes ***
+name=s1                  
+
+*** characters ***
+ch=                                               length=5                 
+ch.length=2048           text=\n\s\s\s\s          locator.column=5         
+start=87                 locator.line=4           
+
+*** startElement ***
+name=Task                uri=http://www.corexml.info/schemas/Tasks         
+qName=tsk:Task           locator.column=25        locator.line=4           
+
+*** startElement: Attributes ***
+name=t1                  
+
+*** characters ***
+ch= t1                   length=4                 ch.length=2048           
+text=\st1\s              locator.column=29        start=112                
+locator.line=4           
+
+*** endElement ***
+localName=Task           uri=http://www.corexml.info/schemas/Tasks         
+qName=tsk:Task           locator.column=40        locator.line=4           
+
+*** characters ***
+ch=                                               length=5                 
+ch.length=2048           text=\n\s\s\s\s          locator.column=5         
+start=127                locator.line=5           
+
+*** startElement ***
+name=Task                uri=http://www.corexml.info/schemas/Tasks         
+qName=tsk:Task           locator.column=25        locator.line=5           
+
+*** startElement: Attributes ***
+name=t2                  
+
+*** characters ***
+ch= t2                   length=4                 ch.length=2048           
+text=\st2\s              locator.column=29        start=152                
+locator.line=5           
+
+*** endElement ***
+localName=Task           uri=http://www.corexml.info/schemas/Tasks         
+qName=tsk:Task           locator.column=40        locator.line=5           
+
+*** characters ***
+ch=                                               length=3                 
+ch.length=2048           text=\n\s\s              locator.column=3         
+start=167                locator.line=6           
+
+*** endElement ***
+localName=Series         uri=http://www.corexml.info/schemas/Tasks         
+qName=tsk:Series         locator.column=16        locator.line=6           
+
+*** characters ***
+ch=                      length=1                 ch.length=2048           
+text=\n                  locator.column=1         start=183                
+locator.line=7           
+
+*** endElement ***
+localName=Tasks          uri=http://www.corexml.info/schemas/Tasks         
+qName=tsk:Tasks          locator.column=13        locator.line=7           
+
+*** endPrefixMapping ***
+prefix=tsk               locator.column=13        locator.line=7           
+endDocument

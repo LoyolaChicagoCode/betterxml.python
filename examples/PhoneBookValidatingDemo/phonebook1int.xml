@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE Friends [
+<!ELEMENT Friends (Friend+)>
+<!ELEMENT Friend (#PCDATA)>
+<!ATTLIST Friend nick_name CDATA #REQUIRED>
+<!ATTLIST Friend number CDATA #REQUIRED>
+]>
+<Friends>
+  <Friend nick_name="george" number="773-555-1234">
+    George K. Thiruvathukal
+  </Friend>
+  <Friend nick_name="nina" number="773-888-8899">
+    Nina Wilfred
+  </Friend>
+  <Friend nick_name="bob" number="701-555-1111">
+    George W. Bush
+  </Friend>
+</Friends>

@@ -1,0 +1,51 @@
+John,
+
+Here is how things work.
+
+To run this stuff, you must have PyXML installed. Get it from 
+pyxml.sourceforge.net. Version 0.7 or 0.8 will work for sure.
+
+If you look at the file, matching_tree.py, you will find just about 
+everything needed. All of the tree node classes are in this file.
+
+To get an intuition for what's going on, observe that every class 
+corresponds to the name of an XML "element". For example, when a "To"
+element is found, an instance of class To is created. 
+
+You'll have to study this a bit, but you will probably be amazed at how
+short the code is!
+
+This is due to the XElement library, which reduces coding from the DOM
+equivalent by greater than 50%.
+
+I created a "Message" class, which allows you to construct with to, from,
+subject, and etc (which is a dictionary for the rest of the message content).
+
+Here are the key files:
+
+matching.dtd: The DTD for validating .xml input. You can combine nodes
+  arbitrarily.
+
+matching_tree.py:
+  The data structures built when the XML input is parsed.
+
+
+rule1.xml rule2.xml rule3.xml:
+   Basic test cases.
+
+rule_and1.xml rule_and2.xml:
+rule_or1.xml rule_or2.xml
+   Simple And tests. You can have as many children in an And node as desired.
+   I only tested with two but expect it to work regardless. Tests are also
+   present just involving Or nodes.
+
+rule_invalid1.xml
+   An example that shows validation is taking place.
+
+rule_mixed1.xml rule_mixed2.xml:
+   Examples that combine And and Or.
+
+
+UserStack.py xelement.py xparser.py:
+   The XElmeent run time system. The DOM created by GKT. :-)
+

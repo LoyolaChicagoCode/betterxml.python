@@ -1,0 +1,29 @@
+Summary of what you'll find here:
+
+UserStack.py                        a stack with push()/pop() operations
+
+phonebook.py                        the phone book main module
+
+phonebook.xml                       the phone book XML w/o errors
+
+phonebook1.xml                      phone books w/ errors
+phonebook2.xml
+phonebook_syntaxerror.xml
+
+session1                            interactive session done during lecture
+                                    to illustrate the XElement system.
+
+studentlistparser.py                demonstration of how to rework the 
+                                    phone book example into a student list
+                                    (you still need to do more work but this
+                                    gives an idea).
+
+studentlist.xml                     student list
+
+xelement.py                         the X-Element system.
+xparser.py
+
+
+To run this demo:
+python phonebook.py phonebook.xml nick_name
+python phonebook.py phonebook1.xml nick_name

@@ -1,0 +1,79 @@
+This does not yet use the formal XElement 1 API
+Code Overview
+
+RUNNING THE DEMO
+
+1. Copy the entire directory (FileSets) to your directory.
+
+2. You might be one of those people who wants to see if a tool like this
+   can work from scratch. Make sure to remove any existing runs of the
+   demo:
+      rm -rf fileset2  (if it's present)
+
+3. Now run test1.py. You need to use /usr/local/python-2.1/bin (or make sure
+   your Python setup includes the XML support)
+
+   /usr/local/python-2.1/bin/python test1.py 
+
+4. You can run this test as many times as desired. Each execution will result
+   in the transparent creation of separate datafiles and metadata for each
+   run.
+
+5. What to look for?
+
+   a. In directory 'fileset2', you'll see nothing unless you use 'ls -a' to
+      show all files. There should be two directories .md and .d present
+      after you run test1.py the first time.
+
+   b. In the metadata directory, .md, you'll see files Execution.xml, Run1.xml,
+      Run2.xml, and so on. The Executions.xml file is used to keep track of the
+      current (and previous) runs. The individual RunN.xml files (N>0) are
+      to represent the details of a run. The key thing to understand is that
+      a run is completely application defined. It could be one program or
+      multiple programs that in a pipelined fashion read/write files
+      arbitrarily.
+
+   c. In the data directory, .d, you'll see the actual data files that were
+      generated in the loop of writes [in function test1()]. These files
+      are named uniquely across (dataset, run, phase, iteration). Information
+      about these files is written in the RunN.xml metadata files.
+
+WHAT YOU'LL FIND HERE
+
+This is the first implementation of Abstract Filing, a high-level interface
+for manipulating large collections of files (datasets) with integrated 
+metadata.
+
+The user interface class to File Sets is contained in FileSet.py. This is
+to be the application interface to working with the abstract filing concept
+
+The core system is based entirely on XML. The files responsible for the XML
+parsing:
+
+ExecutionFile.py: Wraps the parser to read/write changes to the Executions
+  file. The executions file is always named Executions.xml and stored in a
+  FileSet's metadata directory (.md subdirectory).
+
+RunFile.py: Wraps the parser to read/write changes to the Run files. 
+  Run files are always named Run0.xml, Run1.xml, etc. They are also kept
+  in the metadata directory (.md subdirectory)
+
+BootstrapMetadata.py : This module contains no code but has some constants
+  to provide initial content for the Executions.xml file and any new
+  RunN.xml file. You could call these "tempates".
+
+There are also some support modules:
+
+xelement.py:  A simplified tree interface for XML processing. The XElement
+  classes build trees but take advantage of Python's metaprogramming and
+  discovery capabilities. Users can provide their own classes to handle
+  XML elements, which can be constructed automatically the the 
+  XTreeHandler, which is a SAX handler that generates XML document trees
+  from XElement or user-defined subclasses of XElement.
+
+UserStack.py: The stack abstract data type. This is used for maintaining
+  context information while parsing XML. Stacks and trees are needed to 
+  do anything interesting (and non-trivial) with XML.
+
+test1.py: See function test1() to see how the FileSet class is used.
+

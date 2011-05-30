@@ -1,0 +1,5 @@
+To run this demo:
+
+
+python phonebook.py phonebook.xml nick_name
+python phonebook.py phonebook1.xml nick_name

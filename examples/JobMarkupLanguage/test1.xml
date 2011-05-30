@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ticket SYSTEM "cnjob.dtd">
+<ticket>
+<seq>
+  <job name="J1" type="serial" code="j1.jar" mainclass="job1" mainmethod="mymainmethod">
+  <property name="j1a" value="value of j1a"/>
+  <property name="j1b" value="value of j1b"/>
+  </job>
+  <par>
+     <job name="J2" type="parallel" nodes="4" code="j2.jar"  mainclass="job1" mainmethod="mymainmethod">
+     <property name="j2a" value="value of j2a"/>
+     <property name="j2b" value="value of j2b"/>
+     </job>
+     <job name="J3" type="coordinated" nodes="8" code="j3.jar" mainclass="job1" mainmethod="mymainmethod">
+     <property name="j3a" value="value of j3a"/>
+     <property name="j3b" value="value of j3b"/>
+     <property name="j3c" value="value of j3c"/>
+     </job>
+  </par>
+  <job name="J4" type="coordinated" nodes="2" code="j4.jar"  mainclass="job1" mainmethod="mymainmethod"/>
+  <par>
+     <job name="J5" type="serial" code="j5.jar" mainclass="job5" mainmethod="job5main"/>
+     <job name="J6" type="coordinated" nodes="5" code="j6.jar"  mainclass="job1" mainmethod="mymainmethod">
+     <property name="j6" value="value of j6"/>
+     </job>
+  </par>
+  <job name="J7" type="parallel" nodes="2" code="j7.jar"  mainclass="job1" mainmethod="mymainmethod"/>
+</seq>
+</ticket>

@@ -1,0 +1,46 @@
+Python 2.1 (#1, Apr 24 2001, 16:10:35) 
+[GCC 2.95.3 19991030 (prerelease)] on linux2
+Type "copyright", "credits" or "license" for more information.
+>>> from xelement import CreateElement
+>>> e1 = CreateElement(name='complex',attributes=('real','3.0'),('imag'','1.0'))[A>>> e1 = CreateElement(name='complex',attributes=('real','3.0'),('imas=[('real','3.0'),('imag','1.0'))[AreateElement(name='complex',attributes=[('real','3.0'),('imag','1.0')])
+>>> print e1.toXML()
+<?xml version="1.0"?>
+<!-- XIR Tools by GKT -->
+<complex imag="1.0" real="3.0">
+</complex>
+
+>>> e2 = CreateElement(name='some_list',children=p [e1]); 
+>>> e2
+<?xml version="1.0"?>
+<!-- XIR Tools by GKT -->
+<some_list>
+  <complex imag="1.0" real="3.0">
+  </complex>
+</some_list>
+
+>>> e2.addChild(e1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in ?
+AttributeError: XElement instance has no attribute 'addChild'
+>>> dir(e1 2)
+['attrs', 'children', 'name', 'text']
+>>> dir(e2) .__class__)
+['__doc__', '__init__', '__module__', '__repr__', '__str__', 'cdata', 'clone', 'doWalkBFS', 'finalize', 'getAttributes', 'getChild', 'getChildren', 'getName', 'getText', 'hasAttributes', 'initialize', 'linkTo', 'printBFS', 'setAttributes', 'setChildren', 'setName', 'setText', 'toXML', 'visit', 'walkBFS']
+>>> dir(e2.__class__)>>> [Ke1 2.linkTo(e1)
+>>> e2
+<?xml version="1.0"?>
+<!-- XIR Tools by GKT -->
+<some_list>
+  <complex imag="1.0" real="3.0">
+  </complex>
+  <complex imag="1.0" real="3.0">
+  </complex>
+</some_list>
+
+>>> fp = open('output.xml','w')
+>>> fp.write(e2. .toXML())
+>>> fp.close()
+>>> 
+[gkt@www PhoneBookDemo]$ exit
+
+Script done on Tue Oct  9 06:59:41 2001

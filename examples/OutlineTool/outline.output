@@ -1,0 +1,89 @@
+creating Content XElement instance
+Parse complete:
+  Elements:    83
+  Attributes:  8
+  Proc instrs: 0
+  elements:    [u'Requires', u'Abstract', u'Keywords', u'Outline', u'Uses', u'Topic', u'Item', u'Content']
+  Document has 1 children 
+1 content objects
+7 topic objects
+7 topic objects
+* Analyzing Topic TrainingTheInternet
+	- missing1:
+		- not found in any preceding topic (in any section)
+
+* Analyzing Topic TrainingBasicUnix
+	- missing1:
+		- already reported undefined for earlier topic(s):
+			TrainingTheInternet
+
+	- missing2:
+		- not found in any preceding topic (in any section)
+
+	- Routers:
+		= not defined but found in <outline> in earlier topic(s):
+			TrainingTheInternet
+
+* Analyzing Topic TrainingFTP
+	- windows:
+		- not found in any preceding topic (in any section)
+
+	- prompt:
+		+ defined in <keyword> section for these topics:
+			TrainingBasicUnix
+
+	- directory:
+		+ defined in <keyword> section for these topics:
+			TrainingBasicUnix
+
+	- file:
+		+ defined in <keyword> section for these topics:
+			TrainingBasicUnix
+
+	- ls:
+		+ defined in <keyword> section for these topics:
+			TrainingBasicUnix
+
+	- cd:
+		+ defined in <keyword> section for these topics:
+			TrainingBasicUnix
+
+* Analyzing Topic TrainingEmail
+* Analyzing Topic TrainingSiteSupport
+* Analyzing Topic TrainingSiteControl
+	- missing1:
+		- already reported undefined for earlier topic(s):
+			TrainingTheInternet
+			TrainingBasicUnix
+
+* Analyzing Topic none specified
+* All Defined Topics
+	permissions
+	imap
+	missing2
+	directory
+	pop
+	file
+	user
+	emacs
+	prompt
+	cd
+	telnet
+	vi
+	group
+	ls
+	ftp
+	addressing
+* All Undefined Topics
+	Routers
+	missing2
+	missing1
+	windows
+* All Used Topics
+* Checking for undefined Topics that got defined later:
+  each line output is (missing word, where identified, where defined)
+	(missing2, TrainingBasicUnix, TrainingFTP)
+* New List of Undefined Topics
+	Routers
+	missing1
+	windows

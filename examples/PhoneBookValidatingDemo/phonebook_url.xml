@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE Friends SYSTEM "http://www.toolsofcomputing.com/~gkt/Loyola/Summer2001/MarkupLanguages/PhoneBookValidatingDemo/pb.dtd">
+<Friends>
+  <Friend nick_name="george" number="773-555-1234">
+    George K. Thiruvathukal
+  </Friend>
+  <Friend nick_name="nina" number="773-888-8899">
+    Nina Wilfred
+  </Friend>
+  <Friend nick_name="w" number="701-555-1111">
+    George W. Bush
+  </Friend>
+  <Friend nick_name="tc" number="888-889-9999">
+    Thomas W. Christopher
+  </Friend>
+  <Friend nick_name="chandra" number="888-889-9999">
+     Chandra N. Sekharan
+  </Friend>
+</Friends>
+

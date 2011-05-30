@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!ELEMENT Zones (ZoneConfiguration+)>
+<!ELEMENT ZoneConfiguration (TTL?, Host*)>
+<!ATTLIST ZoneConfiguration
+	domain CDATA #REQUIRED
+	contact CDATA #REQUIRED
+	based_on CDATA #IMPLIED
+	active CDATA #IMPLIED>
+<!ELEMENT TTL EMPTY>
+<!ATTLIST TTL
+	refresh CDATA #REQUIRED
+	retry CDATA #REQUIRED
+	expire CDATA #REQUIRED
+	minimum CDATA #REQUIRED>
+<!ELEMENT Host (Description, Alias*)>
+<!ATTLIST Host
+	name CDATA #REQUIRED
+	ip CDATA #REQUIRED
+	mail_exchange CDATA #IMPLIED
+	ns CDATA #IMPLIED>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Alias EMPTY>
+<!ATTLIST Alias name CDATA #REQUIRED>

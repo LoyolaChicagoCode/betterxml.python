@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE Rule SYSTEM "matching.dtd">
+<Rule>
+ <Or>
+  <To match="gkt@cs.luc.edu"/>
+  <Or>
+    <To match="pshafaee@hostway.com"/>
+    <Or> 
+      <Subject match="Hello World"/>
+      <Subject match="Goodbye World"/>
+    </Or>
+  </Or>  
+ </Or>
+</Rule>

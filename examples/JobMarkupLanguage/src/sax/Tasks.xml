@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<tsk:Tasks xmlns:tsk="http://www.corexml.info/schemas/Tasks">
+  <tsk:Series name="s1">
+    <tsk:Task name="t1"> t1 </tsk:Task>
+    <tsk:Task name="t2"> t2 </tsk:Task>
+  </tsk:Series>
+</tsk:Tasks>
