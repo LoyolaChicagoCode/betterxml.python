@@ -7,6 +7,8 @@ setup(name='BetterXML',
       package_dir = {'':'src'},
       packages = ['org', 'org.betterxml', 'org.betterxml.util',
                   'org.betterxml.nxml', 'org.betterxml.xelement1',
-                  'org.betterxml.xelement2',],
+                  'org.betterxml.xelement2', 'org.betterxml.xir' ],
+      script_dir = {'':'src'},
+      scripts = [ 'src/org/betterxml/xir/xml2xir'  ]
      )
 
