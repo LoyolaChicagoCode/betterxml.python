@@ -5,10 +5,9 @@ setup(name='BetterXML',
       description='BetterXML Python Distribution',
       url='http://www.betterxml.org/',
       package_dir = {'':'src'},
-      packages = ['org', 'org.betterxml', 'org.betterxml.util',
-                  'org.betterxml.nxml', 'org.betterxml.xelement1',
-                  'org.betterxml.xelement2', 'org.betterxml.xir' ],
-      script_dir = {'':'src'},
-      scripts = [ 'src/org/betterxml/xir/xml2xir'  ]
+      packages = ['betterxml', 'betterxml.util',
+                  'betterxml.nxml', 'betterxml.xelement1',
+                  'betterxml.xelement2', 'betterxml.xir' ],
+      scripts = [ 'src/betterxml/xir/xirgen', 'src/betterxml/xir/xirecho'  ]
      )
 
